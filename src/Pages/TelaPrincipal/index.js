@@ -12,10 +12,10 @@ export default function TelaPrincipal({ navigation }){
 
                     <TextInput style={styles.searchBar} placeholder="Digite um alimento" onChangeText={text => {console.log(text)}}/>
 
-                    <TouchableOpacity 
-                    id="estrogonofe_de_frango"   //Prato 1
+                    <TouchableOpacity   //Prato 1
+                    id="estrogonofe_de_frango" 
                     style={styles.cardAlimento}
-                    onPress={()=> navigation.navigate(('AlimentoSelecionado'),{   //ao clicar
+                    onPress={()=> navigation.navigate(('AlimentoSelecionado'),{
                         name: 'Estrognofe de Frango',
                         calorias: '100g',
                         carboidratos:'3,8g',
@@ -32,7 +32,9 @@ export default function TelaPrincipal({ navigation }){
                 </View>
             </ScrollView>
 
-            <TouchableOpacity id="botaoCamera" onPress={()=> navigation.navigate('Camera')} style={styles.botaoCamera}><Text>.</Text></TouchableOpacity>
+            <TouchableOpacity id="botaoCamera" onPress={()=> navigation.navigate('TelaCamera')} style={styles.botaoCamera}>
+                <Text>.</Text>
+            </TouchableOpacity>
 
         </View>
     )

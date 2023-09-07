@@ -6,7 +6,7 @@ import api from './src/services/api'
 //paginas
 import TelaPrincipal from './src/Pages/TelaPrincipal'
 import AlimentoSelecionado from './src/Pages/AlimentoSelecionado'
-import Camera from './src/Pages/Camera'
+import TelaCamera from './src/Pages/TelaCamera'
 
 //navegador de paginas
 const Stack = createStackNavigator()
@@ -17,7 +17,7 @@ export default function App(){
       <Stack.Navigator>
         <Stack.Screen name="Tela Principal" component={TelaPrincipal}/>
         <Stack.Screen name="AlimentoSelecionado" component={AlimentoSelecionado}/>
-        <Stack.Screen name="Camera" component={Camera}/>
+        <Stack.Screen name="TelaCamera" component={TelaCamera}/>
       </Stack.Navigator>
     </NavigationContainer>
   )
