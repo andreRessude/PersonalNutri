@@ -15,7 +15,7 @@ export default function App(){
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Tela Principal" component={TelaPrincipal}/>
+        <Stack.Screen name="TelaPrincipal" component={TelaPrincipal}/>
         <Stack.Screen name="AlimentoSelecionado" component={AlimentoSelecionado}/>
         <Stack.Screen name="TelaCamera" component={TelaCamera}/>
       </Stack.Navigator>

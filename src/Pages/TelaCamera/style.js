@@ -3,18 +3,13 @@ import { StyleSheet } from "react-native"
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'center',
-      },
-      camera:{  //dimensoes da camera
+        backgroundColor:"#000000",
+    },
+    camera:{  //dimensoes da camera
         width:"100%",
-        height:"100%",
-      },
-      contentButtons:{
-        flex: 1,
-        backgroundColor: "transparent",
-        flexDirection: "row",
-      },
-      buttonFlip:{  //botao trocar frontal/traseira
+        height:"75%",
+    },
+    buttonFlip:{  //botao trocar frontal/traseira
         position: "absolute",
         bottom:50,
         left:30,
@@ -22,11 +17,11 @@ const styles = StyleSheet.create({
         alignItems: "center",
         backgroundColor: "#ffffff",
         margin:20,
-        height:50,
-        width:50,
+        height:80,
+        width:80,
         borderRadius:50,
-      },
-      buttonCamera:{  //botao camera
+    },
+    buttonCamera:{  //botao camera
         position: "absolute",
         bottom:50,
         right:30,
@@ -34,26 +29,35 @@ const styles = StyleSheet.create({
         alignItems: "center",
         backgroundColor: "#ffffff",
         margin:20,
-        height:50,
-        width:50,
+        height:80,
+        width:80,
         borderRadius:50,
-      },
-      contentModal:{  
+    },
+    contentModal:{  
         flex:1,
         justifyContent:"center",
-        alignItems:"flex-end",
+        alignItems:"flex-start",
         margin:20,
-      },
-      closeButton:{ //botao fechar foto
-        position:"absolute",
-        top:10,
-        left:2,
+    },
+    closeButton:{ //botao fechar foto
+        alignItems:"center",
+        justifyContent:"center",
         margin:10,
-      },
-      imgPhoto:{  //foto
+        backgroundColor:"#ffffff",
+        borderRadius:50,
+        width:50,
+        height:50,
+    },
+    imgPhoto:{  //foto
         width:"100%",
-        height:600,
-      }
+        height:"75%",
+    },
+    confirmarFoto:{
+        width:100,
+        height:60,
+        backgroundColor:"#ffffff",
+        borderRadius:50,
+    }
 });
 
 export default styles
