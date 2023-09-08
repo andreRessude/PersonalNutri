@@ -17,11 +17,11 @@ const styles = StyleSheet.create({
     imagemPrato:{
         backgroundColor:"blue",
         color:"#ffffff",
-
         width:"90%",
         textAlign:"center",
         borderRadius:25,
         paddingVertical:100,
+        margin:10
     },
     tabelaNutricional: {
         width:"90%",

@@ -43,6 +43,51 @@ export default function TelaPrincipal(){
                         style={styles.textCardAlimento}
                         >Estrognofe de Frango</Text>
                     </TouchableOpacity>
+                    <TouchableOpacity   //Prato 1
+                    id="estrogonofe_de_frango" 
+                    style={styles.cardAlimento}
+                    onPress={ openScreenAlimentoSelecionado}
+                    >
+                        <Text 
+                        style={styles.textCardAlimento}
+                        >Estrognofe de Frango</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity   //Prato 1
+                    id="estrogonofe_de_frango" 
+                    style={styles.cardAlimento}
+                    onPress={ openScreenAlimentoSelecionado}
+                    >
+                        <Text 
+                        style={styles.textCardAlimento}
+                        >Estrognofe de Frango</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity   //Prato 1
+                    id="estrogonofe_de_frango" 
+                    style={styles.cardAlimento}
+                    onPress={ openScreenAlimentoSelecionado}
+                    >
+                        <Text 
+                        style={styles.textCardAlimento}
+                        >Estrognofe de Frango</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity   //Prato 1
+                    id="estrogonofe_de_frango" 
+                    style={styles.cardAlimento}
+                    onPress={ openScreenAlimentoSelecionado}
+                    >
+                        <Text 
+                        style={styles.textCardAlimento}
+                        >Estrognofe de Frango</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity   //Prato 1
+                    id="estrogonofe_de_frango" 
+                    style={styles.cardAlimento}
+                    onPress={ openScreenAlimentoSelecionado}
+                    >
+                        <Text 
+                        style={styles.textCardAlimento}
+                        >Estrognofe de Frango</Text>
+                    </TouchableOpacity>
 
                 </View>
             </ScrollView>

@@ -20,8 +20,7 @@ export function StackRoutes(){
           headerTitleAlign:"center"
         }
       }>
-        <Screen 
-        name="TelaPrincipal" 
+        <Screen name="TelaPrincipal" 
         component={TelaPrincipal} 
         options={
           {
@@ -32,8 +31,7 @@ export function StackRoutes(){
           }
         }/>
 
-        <Screen 
-        name="TelaAlimentoSelecionado" 
+        <Screen name="TelaAlimentoSelecionado" 
         component={TelaAlimentoSelecionado}
         options={
           {
@@ -47,8 +45,7 @@ export function StackRoutes(){
           }
         }/>
         
-        <Screen 
-        name="TelaCamera" 
+        <Screen name="TelaCamera" 
         component={TelaCamera}
         options={
           {
