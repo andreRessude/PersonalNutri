@@ -61,18 +61,18 @@ export default function TelaCamera({ navigation }) {
             </TouchableOpacity>
 
             {capturedPhoto &&(  //quando imagem for capturada
-                <Modal style={styles.modal} animationType="slide" transparent={false} visible={open}>
+                <Modal animationType="slide" transparent={false} visible={open}>
                     <View style={styles.contentModal}>
                         
                         <Image style={styles.imgPhoto} source={{uri : capturedPhoto}}/>
 
                         <View style={styles.containerModal}>
                             <TouchableOpacity style={styles.modalButtons} onPress={() => {setOpen(false)}}>
-                                <Text style={styles.textoModalButtons}>Tirar foto novamente</Text>
+                                <Text style={styles.textModalButtons}>Tirar foto novamente</Text>
                             </TouchableOpacity>
 
                             <TouchableOpacity style={styles.modalButtons} onPress={() => {navigation.navigate('TelaPrincipal')}}>
-                                <Text style={styles.textoModalButtons}>Confirmar foto</Text>
+                                <Text style={styles.textModalButtons}>Confirmar foto</Text>
                             </TouchableOpacity>
                         </View>
                     </View>

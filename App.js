@@ -15,20 +15,62 @@ export default function App(){
   return (
     <NavigationContainer>
       <Stack.Navigator>
-
         <Stack.Screen 
         name="TelaPrincipal" 
-        component={TelaPrincipal}/>
-        
+        component={TelaPrincipal} 
+        options={
+          {
+            title:"Personal Nutri", 
+            headerStyle:{
+              backgroundColor:"#CD021B"
+            },
+            headerTitleAlign:"center",
+            headerTitleStyle:{
+              color:"#ffffff",
+              textTransform:"uppercase",
+              fontWeight:"bold"
+            }
+          }
+        }/>
 
         <Stack.Screen 
         name="AlimentoSelecionado" 
-        component={AlimentoSelecionado}/>
+        component={AlimentoSelecionado}
+        options={
+          {
+            title:"Estrogonofe de Frango", 
+            headerStyle:{
+              backgroundColor:"#CD021B"
+            },
+            headerTitleAlign:"center",
+            headerTitleStyle:{
+              color:"#ffffff",
+              textTransform:"uppercase",
+              fontWeight:"bold",
+              fontSize:16
+            }
+          }
+        }/>
         
-
         <Stack.Screen 
         name="TelaCamera" 
-        component={TelaCamera}/>
+        component={TelaCamera}
+        options={
+          {
+            title:"", 
+            headerStyle:{
+            backgroundColor:"#000000"
+            },
+            headerLeftContainerStyle:{
+              backgroundColor:"#ffffff",
+              borderRadius:50,
+              left:15,
+              width:50,
+              height:50,
+              justifyContent:"center"
+            }
+          }
+        }/>
       </Stack.Navigator>
     </NavigationContainer>
   )

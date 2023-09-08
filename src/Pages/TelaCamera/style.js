@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
         borderRadius:50,
         margin:10,
     },
-    textoModalButtons:{
+    textModalButtons:{
         textAlign:"center",
         fontSize:16,
         fontWeight:"bold",
