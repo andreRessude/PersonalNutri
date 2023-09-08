@@ -1,21 +1,25 @@
-import React, { Component } from "react"
+import React from "react"
 import { View, Text } from 'react-native'
+import {useRoute} from '@react-navigation/native'
 import styles from "./style"
 
-export default function TelaAlimentoSelecionado({ route }){
+export default function TelaAlimentoSelecionado(){
+
+    const route = useRoute();
+    const { pratos } = route.params;
+
+
     return(
         <View style={styles.telaAlimentoSelecionado}>
             <Text style={styles.imagemPrato}>Imagem do prato</Text>
-
             <Text style={styles.titulo}>Valores Nutricionais</Text>
-
             <View style={styles.tabelaNutricional}>
-                <Text style={styles.textTabelaNutricional}>Calorias: {route.params?.calorias}</Text>
-                <Text style={styles.textTabelaNutricional}>Carboidratos: {route.params?.carboidratos}</Text>
-                <Text style={styles.textTabelaNutricional}>Fibras: {route.params?.fibras}</Text>
-                <Text style={styles.textTabelaNutricional}>Proteínas: {route.params?.proteinas}</Text>
-                <Text style={styles.textTabelaNutricional}>Índice Glicêmico: {route.params?.indiceGlicemico}</Text>
-            </View>
+                <Text style={styles.textTabelaNutricional}>Calorias: {pratos.calorias}</Text>
+                <Text style={styles.textTabelaNutricional}>Proteína: {pratos.proteinas}</Text>
+                <Text style={styles.textTabelaNutricional}>Fibras: {pratos.fibras}</Text>
+                <Text style={styles.textTabelaNutricional}>Carboidratos: {pratos.carboidratos}</Text>
+                <Text style={styles.textTabelaNutricional}>Índice Glicêmico: {pratos.indiceGlicemico}</Text>
+            </View> 
         </View>
     )
 }    
