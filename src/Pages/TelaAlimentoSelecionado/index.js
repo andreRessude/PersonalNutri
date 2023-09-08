@@ -2,11 +2,9 @@ import React, { Component } from "react"
 import { View, Text } from 'react-native'
 import styles from "./style"
 
-export default function AlimentoSelecionado({ route }){
+export default function TelaAlimentoSelecionado({ route }){
     return(
         <View style={styles.telaAlimentoSelecionado}>
-            <Text style={styles.titulo}>{route.params?.name}</Text>
-
             <Text style={styles.imagemPrato}>Imagem do prato</Text>
 
             <Text style={styles.titulo}>Valores Nutricionais</Text>

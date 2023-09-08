@@ -1,8 +1,30 @@
 import React from "react"
 import { View, Text, TouchableOpacity, ScrollView, TextInput } from 'react-native'
+import { useNavigation } from "@react-navigation/native"
 import styles from "./style"
 
-export default function TelaPrincipal({ navigation }){
+export default function TelaPrincipal(){
+    
+    const navigation = useNavigation()
+    
+    //ir para telaCamera
+    function openScreenCamera(){
+        navigation.navigate('TelaCamera')
+        
+    }
+    //ir para telaAlimentoSelecionado
+    function openScreenAlimentoSelecionado(){
+        navigation.navigate(('TelaAlimentoSelecionado'),{
+            name: 'Estrognofe de Frango',
+            calorias: '100g',
+            carboidratos:'3,8g',
+            fibras:'0g',
+            proteinas:'17g',
+            indiceGlicemico:'?',
+        })
+
+    }
+
     return(
         <View style={styles.tela} >    
 
@@ -15,14 +37,7 @@ export default function TelaPrincipal({ navigation }){
                     <TouchableOpacity   //Prato 1
                     id="estrogonofe_de_frango" 
                     style={styles.cardAlimento}
-                    onPress={()=> navigation.navigate(('AlimentoSelecionado'),{
-                        name: 'Estrognofe de Frango',
-                        calorias: '100g',
-                        carboidratos:'3,8g',
-                        fibras:'0g',
-                        proteinas:'17g',
-                        indiceGlicemico:'?',
-                    })}
+                    onPress={ openScreenAlimentoSelecionado}
                     >
                         <Text 
                         style={styles.textCardAlimento}
@@ -32,11 +47,10 @@ export default function TelaPrincipal({ navigation }){
                 </View>
             </ScrollView>
 
-            <TouchableOpacity id="botaoCamera" onPress={()=> navigation.navigate('TelaCamera')} style={styles.botaoCamera}>
+            <TouchableOpacity id="botaoCamera" onPress={openScreenCamera} style={styles.botaoCamera}>
                 <Text>.</Text>
             </TouchableOpacity>
 
         </View>
     )
 }
-
