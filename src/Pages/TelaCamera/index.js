@@ -53,23 +53,28 @@ export default function TelaCamera({ navigation }) {
                         : Camera.Constants.Type.back
                     )
                 }}>
-                <FontAwesome name="exchange" size={28} color={"#000000"}/>
+                <FontAwesome name="exchange" style={styles.buttonIcons}/>
             </TouchableOpacity>
 
             <TouchableOpacity style={styles.buttonCamera} onPress={takePicture}>
-                <FontAwesome name='camera' size={28} color="#000000"/>
+                <FontAwesome name='camera' style={styles.buttonIcons}/>
             </TouchableOpacity>
 
             {capturedPhoto &&(  //quando imagem for capturada
-                <Modal animationType="slide" transparent={true} visible={open}>
+                <Modal style={styles.modal} animationType="slide" transparent={false} visible={open}>
                     <View style={styles.contentModal}>
-                        <TouchableOpacity style={styles.closeButton} onPress={() => {setOpen(false)}}>
-                            <FontAwesome name="close" size={32} color="black"/>
-                        </TouchableOpacity>
+                        
                         <Image style={styles.imgPhoto} source={{uri : capturedPhoto}}/>
-                        <TouchableOpacity style={styles.confirmarFoto} onPress={() => {navigation.navigate('TelaPrincipal')}}>
-                            <Text>Confirmar foto</Text>
-                        </TouchableOpacity>
+
+                        <View style={styles.containerModal}>
+                            <TouchableOpacity style={styles.modalButtons} onPress={() => {setOpen(false)}}>
+                                <Text style={styles.textoModalButtons}>Tirar foto novamente</Text>
+                            </TouchableOpacity>
+
+                            <TouchableOpacity style={styles.modalButtons} onPress={() => {navigation.navigate('TelaPrincipal')}}>
+                                <Text style={styles.textoModalButtons}>Confirmar foto</Text>
+                            </TouchableOpacity>
+                        </View>
                     </View>
                 </Modal>  
             )}

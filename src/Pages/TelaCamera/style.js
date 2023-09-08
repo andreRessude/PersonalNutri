@@ -33,31 +33,45 @@ const styles = StyleSheet.create({
         width:80,
         borderRadius:50,
     },
+    buttonIcons:{
+        fontSize:28,
+        color:"#000000",
+    },
     contentModal:{  
         flex:1,
+        width:"100%",
+        heigth:"100%",
         justifyContent:"center",
-        alignItems:"flex-start",
-        margin:20,
-    },
-    closeButton:{ //botao fechar foto
         alignItems:"center",
-        justifyContent:"center",
-        margin:10,
-        backgroundColor:"#ffffff",
-        borderRadius:50,
-        width:50,
-        height:50,
+        backgroundColor:"#000000",
+        paddingTop:20,
     },
     imgPhoto:{  //foto
         width:"100%",
         height:"75%",
     },
-    confirmarFoto:{
-        width:100,
+    containerModal:{
+        flex:1,
+        flexDirection:"row",
+        alignItems:"center",
+        justifyContent:"space-between"
+    },
+    modalButtons:{
+        alignItems:"center",
+        justifyContent:"center",
+        width:160,
         height:60,
         backgroundColor:"#ffffff",
         borderRadius:50,
-    }
+        margin:10,
+    },
+    textoModalButtons:{
+        textAlign:"center",
+        fontSize:16,
+        fontWeight:"bold",
+        textTransform:"uppercase",
+        color:"#000000",
+    },
 });
 
 export default styles
