@@ -2,18 +2,18 @@ import React from "react"
 import { View, Text, TouchableOpacity, ScrollView, TextInput } from 'react-native'
 import { useNavigation } from "@react-navigation/native"
 import styles from "./style"
+import { FontAwesome } from '@expo/vector-icons'
 
 export default function TelaPrincipal(){
     
     const navigation = useNavigation()
     
-    //ir para telaCamera
-    function openScreenCamera(){
+    function openScreenCamera(){    //ir para telaCamera
         navigation.navigate('TelaCamera')
         
     }
-    //ir para telaAlimentoSelecionado
-    function openScreenAlimentoSelecionado(){
+    
+    function openScreenAlimentoSelecionado(){   //ir para telaAlimentoSelecionado
         navigation.navigate(('TelaAlimentoSelecionado'),{
             name: 'Estrognofe de Frango',
             calorias: '100g',
@@ -48,7 +48,7 @@ export default function TelaPrincipal(){
             </ScrollView>
 
             <TouchableOpacity id="botaoCamera" onPress={openScreenCamera} style={styles.botaoCamera}>
-                <Text>.</Text>
+                <FontAwesome name='camera' style={styles.botaoCameraIcon}/>
             </TouchableOpacity>
 
         </View>

@@ -34,18 +34,23 @@ const styles = StyleSheet.create({
         color:"#ffffff",
         fontSize:16, 
         textAlign:"center",
-
         padding:10,
     },
     botaoCamera:{
-        backgroundColor:"green",
-        width:70,
-        height:70,
+        position: "absolute",
+        bottom:50,
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor: "#CD021B",
+        margin:20,
+        height:80,
+        width:80,
         borderRadius:50,
-        alignItems:"center",
-        justifyContent:"center",
-        margin:20
     },
+    botaoCameraIcon:{
+        fontSize:36,
+        color:"#ffffff",
+    }
 });
 
 export default styles
