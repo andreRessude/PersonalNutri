@@ -14,6 +14,7 @@ const styles = StyleSheet.create({
         flex:1,
         alignItems:"center",
         gap:30,
+        paddingBottom:30,
     },
     searchBar:{
         width:"90%",        

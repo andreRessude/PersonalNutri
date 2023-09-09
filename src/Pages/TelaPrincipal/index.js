@@ -4,7 +4,6 @@ import { useNavigation } from "@react-navigation/native"
 import styles from "./style"
 import { FontAwesome } from '@expo/vector-icons'
 import { buscarPratos } from "../../Services/api"
-import SearchBar from "../../Components/SearchBar/searchBar"
 
 export default function TelaPrincipal(){
 
