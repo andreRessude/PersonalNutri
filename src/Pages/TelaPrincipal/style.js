@@ -13,6 +13,7 @@ const styles = StyleSheet.create({
     paginaPrincipal:{
         flex:1,
         alignItems:"center",
+        gap:30,
     },
     searchBar:{
         width:"90%",        
@@ -27,7 +28,6 @@ const styles = StyleSheet.create({
         width:"90%",
         height:200,
         borderRadius:10,
-        margin:30,
         justifyContent:"flex-end"
     },
     textCardAlimento:{

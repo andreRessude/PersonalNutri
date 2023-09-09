@@ -4,6 +4,7 @@ import { useNavigation } from "@react-navigation/native"
 import styles from "./style"
 import { FontAwesome } from '@expo/vector-icons'
 import { buscarPratos } from "../../Services/api"
+import SearchBar from "../../Components/SearchBar/searchBar"
 
 export default function TelaPrincipal(){
 
@@ -42,9 +43,11 @@ export default function TelaPrincipal(){
         <View style={styles.tela}>
             <ScrollView style={styles.scrollView}>
                 <View style={styles.paginaPrincipal}>
-
+                                        
+                    {
+                    /*<SearchBar/>*/}
                     <TextInput style={styles.searchBar} placeholder="Digite um alimento" onChangeText={text => {console.log(text)}}/>
-                    
+
                     {/*utilizando os dados da api para criar cards*/}
                     {pratos.map((prato) => (
                         <TouchableOpacity
