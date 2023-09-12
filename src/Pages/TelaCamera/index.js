@@ -78,6 +78,6 @@ export default function TelaCamera({ navigation }) {
                     </View>
                 </Modal>  
             )}
-        </SafeAreaView> 
+        </SafeAreaView>
     )
 }

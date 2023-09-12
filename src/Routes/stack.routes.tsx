@@ -35,7 +35,7 @@ export function StackRoutes(){
         component={TelaAlimentoSelecionado}
         options={
           {
-            title:"Estrogonofe de Frango", 
+            title:"", 
             headerStyle:{
               backgroundColor:"#CD021B"
             },

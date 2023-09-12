@@ -11,6 +11,7 @@ export default function TelaAlimentoSelecionado(){
 
     return(
         <View style={styles.telaAlimentoSelecionado}>
+            <Text style={styles.titulo}>{pratos.nome}</Text>
             <Text style={styles.imagemPrato}>Imagem do prato</Text>
             <Text style={styles.titulo}>Valores Nutricionais</Text>
             <View style={styles.tabelaNutricional}>

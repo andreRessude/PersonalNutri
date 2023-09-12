@@ -1,6 +1,8 @@
 export async function buscarPratos() {
+
+    const apiUrl = 'https://personalnutriapipratos.andrenascimen15.repl.co/pratos'
     try {
-      const response = await fetch('http://192.168.0.34:3000/pratos');
+      const response = await fetch(apiUrl);
       if (!response.ok) {
         throw new Error('Erro ao buscar pratos');
       }

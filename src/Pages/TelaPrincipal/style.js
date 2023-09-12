@@ -16,13 +16,24 @@ const styles = StyleSheet.create({
         gap:30,
         paddingBottom:30,
     },
-    searchBar:{
-        width:"90%",        
-        padding:10,
+    boxSearchBar:{
+        flex:1,
+        width:"90%",
         marginTop:20,
+        alignItems:"center",
+        justifyContent:"space-between",
+        flexDirection:"row",
+    },
+    searchBar:{
+        width:"85%",        
+        padding:10,
         borderRadius:10,
         borderColor:"#000000",
         borderWidth:2
+    },
+    searchBarIcon:{
+        fontSize:30,
+        margin:15,
     },
     cardAlimento:{
         backgroundColor:"blue",
