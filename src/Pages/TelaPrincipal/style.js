@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
     },
     scrollView:{
         width:"100%",
-        heigth:"100%",
+        heigth:"100%"
     },
     paginaPrincipal:{
         flex:1,
@@ -16,38 +16,39 @@ const styles = StyleSheet.create({
         gap:30,
         paddingBottom:30,
     },
-    boxSearchBar:{
-        flex:1,
-        width:"90%",
-        marginTop:20,
-        alignItems:"center",
-        justifyContent:"space-between",
-        flexDirection:"row",
-    },
     searchBar:{
-        width:"85%",        
+        backgroundColor:"green",
+        width:"100%"
+    },
+    cardAlimentoContainer: {
+        width: "90%",
+        height: 200,
+        position: 'relative',   // Para que a imagem e o conteúdo se sobreponham
+    },
+    backgroundImage: {
+        width: '100%',
+        height: '100%',
+        borderRadius:10,
+        resizeMode: 'cover', 
+        position: 'absolute',   // Para sobrepor o conteúdo
+      },
+      cardAlimentoContent: {
+        position: 'absolute',   // Para sobrepor a imagem de fundo
+        width: '100%',
+        height: '100%',
+        justifyContent: 'flex-end',
+        alignItems: 'center',
+        
+      },
+      cardAlimentoText: {
+        color: '#000000',
+        fontSize: 18,
+        fontWeight: 'bold',
+        width:"100%",
         padding:10,
-        borderRadius:10,
-        borderColor:"#000000",
-        borderWidth:2
-    },
-    searchBarIcon:{
-        fontSize:30,
-        margin:15,
-    },
-    cardAlimento:{
-        backgroundColor:"blue",
-        width:"90%",
-        height:200,
-        borderRadius:10,
-        justifyContent:"flex-end"
-    },
-    textCardAlimento:{
-        color:"#ffffff",
-        fontSize:16, 
         textAlign:"center",
-        padding:10,
-    },
+        backgroundColor:"rgba(255,255,255,0.85)"
+      },
     botaoCamera:{
         position: "absolute",
         bottom:50,

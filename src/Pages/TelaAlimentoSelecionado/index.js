@@ -1,5 +1,5 @@
 import React from "react"
-import { View, Text } from 'react-native'
+import { View, Text, Image } from 'react-native'
 import {useRoute} from '@react-navigation/native'
 import styles from "./style"
 
@@ -12,7 +12,10 @@ export default function TelaAlimentoSelecionado(){
     return(
         <View style={styles.telaAlimentoSelecionado}>
             <Text style={styles.titulo}>{pratos.nome}</Text>
-            <Text style={styles.imagemPrato}>Imagem do prato</Text>
+            <Image
+            source={{uri:pratos.imagem}}
+            style={styles.imagemPrato}
+            />
             <Text style={styles.titulo}>Valores Nutricionais</Text>
             <View style={styles.tabelaNutricional}>
                 <Text style={styles.textTabelaNutricional}>Calorias: {pratos.calorias}</Text>

@@ -15,10 +15,8 @@ const styles = StyleSheet.create({
         fontWeight:"bold",
     },
     imagemPrato:{
-        backgroundColor:"blue",
-        color:"#ffffff",
         width:"90%",
-        textAlign:"center",
+        height:100,
         borderRadius:25,
         paddingVertical:100,
         margin:10
