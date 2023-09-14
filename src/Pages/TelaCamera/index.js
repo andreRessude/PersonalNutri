@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef} from 'react'
-import { Text, View, SafeAreaView, TouchableOpacity, Modal, Image } from 'react-native'
+import { Text, View, SafeAreaView, TouchableOpacity, Modal, Image, Share } from 'react-native'
 import styles from './style'
 import { Camera } from 'expo-camera'
 import { CameraType } from 'expo-camera/build/Camera.types'

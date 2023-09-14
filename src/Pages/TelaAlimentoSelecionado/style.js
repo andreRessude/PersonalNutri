@@ -19,16 +19,33 @@ const styles = StyleSheet.create({
         height:100,
         borderRadius:25,
         paddingVertical:100,
-        margin:10
+        margin:10,
     },
     tabelaNutricional: {
         width:"90%",
         margin:10,
         alignItems:"center",
+        borderWidth:2,
+    },
+    linhaTabela:{
+        flexDirection:"row",
+        width:"100%",
+        justifyContent:"space-between",
+        borderWidth:2,
+    },
+    porcaoTabela:{
+        width:"100%",
+        textAlign:"center",
+        fontSize:20,
+        fontWeight:"bold",
+        backgroundColor:"#CD021B",
+        color:"white",
+        padding:6
     },
     textTabelaNutricional:{
         padding:10,
-        width:"100%",
+        fontSize:20,
+        textAlign:"center",
     },
 });
 

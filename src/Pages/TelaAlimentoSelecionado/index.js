@@ -17,12 +17,25 @@ export default function TelaAlimentoSelecionado(){
             style={styles.imagemPrato}
             />
             <Text style={styles.titulo}> Valores Nutricionais </Text>
+
             <View style={styles.tabelaNutricional}>
-                <Text style={styles.textTabelaNutricional}>Calorias: {pratos.calorias} </Text>
-                <Text style={styles.textTabelaNutricional}>Proteína: {pratos.proteinas} </Text>
-                <Text style={styles.textTabelaNutricional}>Fibras: {pratos.fibras} </Text>
-                <Text style={styles.textTabelaNutricional}>Carboidratos: {pratos.carboidratos} </Text>
-                <Text style={styles.textTabelaNutricional}>Índice Glicêmico: {pratos.indiceGlicemico} </Text>
+                <Text style={styles.porcaoTabela}>Porção: 300g</Text>
+                <View style={styles.linhaTabela}>
+                    <Text style={styles.textTabelaNutricional}> Calorias: </Text>
+                    <Text style={styles.textTabelaNutricional}> {pratos.calorias} </Text>
+                </View>
+                <View style={styles.linhaTabela}>
+                    <Text style={styles.textTabelaNutricional}> Fibras: </Text>
+                    <Text style={styles.textTabelaNutricional}> {pratos.fibras} </Text>
+                </View>
+                <View style={styles.linhaTabela}>
+                    <Text style={styles.textTabelaNutricional}> Lipídios: </Text>
+                    <Text style={styles.textTabelaNutricional}> {pratos.lipidios} </Text>
+                </View>
+                <View style={styles.linhaTabela}>
+                    <Text style={styles.textTabelaNutricional}> Carga glicêmica: </Text>
+                    <Text style={styles.textTabelaNutricional}> {pratos.indiceGlicemico} </Text>
+                </View>
             </View> 
         </View>
     )
