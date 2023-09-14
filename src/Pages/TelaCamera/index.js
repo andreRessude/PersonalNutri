@@ -42,9 +42,7 @@ export default function TelaCamera({ navigation }) {
     //tela
     return (
         <SafeAreaView style={styles.container}>
-
             <Camera style={styles.camera} type={type} ref={camRef}/>
-            
             <TouchableOpacity style={styles.buttonFlip}
                 onPress={() =>{
                     setType(
@@ -55,22 +53,17 @@ export default function TelaCamera({ navigation }) {
                 }}>
                 <FontAwesome name="exchange" style={styles.buttonIcons}/>
             </TouchableOpacity>
-
             <TouchableOpacity style={styles.buttonCamera} onPress={takePicture}>
                 <FontAwesome name='camera' style={styles.buttonIcons}/>
             </TouchableOpacity>
-
             {capturedPhoto &&(  //quando imagem for capturada
                 <Modal animationType="slide" transparent={false} visible={open}>
                     <View style={styles.contentModal}>
-                        
                         <Image style={styles.imgPhoto} source={{uri : capturedPhoto}}/>
-
                         <View style={styles.containerModal}>
                             <TouchableOpacity style={styles.modalButtons} onPress={() => {setOpen(false)}}>
                                 <Text style={styles.textModalButtons}>Tirar foto novamente</Text>
                             </TouchableOpacity>
-
                             <TouchableOpacity style={styles.modalButtons} onPress={() => {navigation.navigate('TelaPrincipal')}}>
                                 <Text style={styles.textModalButtons}>Confirmar foto</Text>
                             </TouchableOpacity>

@@ -1,25 +1,25 @@
 import { StyleSheet } from "react-native";
 
 const  styles = StyleSheet.create({
-    containerCards:{
+    
+    listaCards:{
         flex:1,
         alignItems:"center",
-        gap:30,
-        paddingBottom:30,
+        marginVertical:30
     },
-    cardAlimentoContainer: {
+    cardContainer: {
         width: "90%",
         height: 200,
         position: 'relative',   // Para que a imagem e o conteúdo se sobreponham
     },
-    backgroundImage: {
+    cardImage: {
         width: '100%',
         height: '100%',
         borderRadius:10,
         resizeMode: 'cover', 
         position: 'absolute',   // Para sobrepor o conteúdo
     },
-    cardAlimentoContent: {
+    cardContent: {
         position: 'absolute',   // Para sobrepor a imagem de fundo
         width: '100%',
         height: '100%',
@@ -27,14 +27,14 @@ const  styles = StyleSheet.create({
         alignItems: 'center',
         
     },
-    cardAlimentoText: {
+    cardText: {
         color: '#000000',
         fontSize: 18,
         fontWeight: 'bold',
         width:"100%",
         padding:10,
         textAlign:"center",
-        backgroundColor:"rgba(255,255,255,0.85)",
+        backgroundColor:"rgba(255,255,255,0.75)",
         borderRadius:10,
     },
 })
