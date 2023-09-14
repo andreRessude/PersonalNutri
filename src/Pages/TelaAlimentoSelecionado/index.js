@@ -11,18 +11,18 @@ export default function TelaAlimentoSelecionado(){
 
     return(
         <View style={styles.telaAlimentoSelecionado}>
-            <Text style={styles.titulo}>{pratos.nome}</Text>
+            <Text style={styles.titulo}> {pratos.nome} </Text>
             <Image
             source={{uri:pratos.imagem}}
             style={styles.imagemPrato}
             />
-            <Text style={styles.titulo}>Valores Nutricionais</Text>
+            <Text style={styles.titulo}> Valores Nutricionais </Text>
             <View style={styles.tabelaNutricional}>
-                <Text style={styles.textTabelaNutricional}>Calorias: {pratos.calorias}</Text>
-                <Text style={styles.textTabelaNutricional}>Proteína: {pratos.proteinas}</Text>
-                <Text style={styles.textTabelaNutricional}>Fibras: {pratos.fibras}</Text>
-                <Text style={styles.textTabelaNutricional}>Carboidratos: {pratos.carboidratos}</Text>
-                <Text style={styles.textTabelaNutricional}>Índice Glicêmico: {pratos.indiceGlicemico}</Text>
+                <Text style={styles.textTabelaNutricional}>Calorias: {pratos.calorias} </Text>
+                <Text style={styles.textTabelaNutricional}>Proteína: {pratos.proteinas} </Text>
+                <Text style={styles.textTabelaNutricional}>Fibras: {pratos.fibras} </Text>
+                <Text style={styles.textTabelaNutricional}>Carboidratos: {pratos.carboidratos} </Text>
+                <Text style={styles.textTabelaNutricional}>Índice Glicêmico: {pratos.indiceGlicemico} </Text>
             </View> 
         </View>
     )
