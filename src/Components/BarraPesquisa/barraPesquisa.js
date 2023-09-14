@@ -10,11 +10,13 @@ export default function BarraPesquisa() {
     const [search, setSearch] = useState('');
     const [filteredData, setFilteredData] = useState([]);
     const navigation = useNavigation()
+
     const openScreenAlimentoSelecionado = (pratos) => {    //ir para telaAlimentoSelecionado e enviar dados da API
         console.log(pratos.nome)
         navigation.navigate(('TelaAlimentoSelecionado'),{pratos})
     };
 
+    //dados da api
     useEffect(() => {
         async function carregarPratos() {
         try {
@@ -28,14 +30,16 @@ export default function BarraPesquisa() {
         carregarPratos();
     }, []);
 
+    // Filtrar os dados com base na pesquisa do usuário
     useEffect(() => {
-        // Filtrar os dados com base na pesquisa do usuário
+        
         const filtered = data.filter((item) =>
         item.nome.toLowerCase().includes(search.toLowerCase())
         );
         setFilteredData(filtered);
     }, [search, data]);
 
+    //cards
     const CardsAlimentos = ({ item }) => {
         return (
             <View style={styles.listaCards}>
