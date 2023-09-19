@@ -7,12 +7,18 @@ const styles = StyleSheet.create({
         height:"100%",
         alignItems:"center",
     },
+    container:{
+        flex:1,
+        width:"100%",
+        alignItems:"center",
+        margin:10
+    },
     titulo:{
         width:"100%",
         padding:15,
         textAlign:"center",
         fontSize:24,
-        fontWeight:"bold",
+        textTransform:"uppercase",
     },
     imagemPrato:{
         width:"90%",
@@ -25,22 +31,21 @@ const styles = StyleSheet.create({
         width:"90%",
         margin:10,
         alignItems:"center",
-        borderWidth:2,
-    },
-    linhaTabela:{
-        flexDirection:"row",
-        width:"100%",
-        justifyContent:"space-between",
-        borderWidth:2,
     },
     porcaoTabela:{
         width:"100%",
         textAlign:"center",
         fontSize:20,
-        fontWeight:"bold",
         backgroundColor:"#CD021B",
         color:"white",
-        padding:6
+        padding:6,
+        borderWidth:1,
+    },
+    linhaTabela:{
+        flexDirection:"row",
+        width:"100%",
+        justifyContent:"space-between",
+        borderWidth:1,
     },
     textTabelaNutricional:{
         padding:10,

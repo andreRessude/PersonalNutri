@@ -26,7 +26,7 @@ export function StackRoutes(){
           {
             title:"Personal Nutri", 
             headerStyle:{
-              backgroundColor:"#CD021B"
+              backgroundColor:"#CD021B",
             }
           }
         }/>

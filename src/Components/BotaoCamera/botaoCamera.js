@@ -3,7 +3,6 @@ import { TouchableOpacity } from 'react-native'
 import { useNavigation } from "@react-navigation/native"
 import styles from "./style"
 import { FontAwesome } from '@expo/vector-icons'
-import { useState } from 'react'
 
 export default function BotaoCamera(){
 

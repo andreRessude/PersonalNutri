@@ -17,14 +17,14 @@ const styles = StyleSheet.create({
         alignItems: "center",
         backgroundColor: "#ffffff",
         margin:20,
-        height:80,
-        width:80,
+        height:50,
+        width:50,
         borderRadius:50,
     },
     buttonCamera:{  //botao camera
         position: "absolute",
         bottom:50,
-        right:30,
+        right:145,
         justifyContent: "center",
         alignItems: "center",
         backgroundColor: "#ffffff",
@@ -33,8 +33,8 @@ const styles = StyleSheet.create({
         width:80,
         borderRadius:50,
     },
-    buttonIcons:{
-        fontSize:28,
+    buttonFlipIcon:{
+        fontSize:30,
         color:"#000000",
     },
     contentModal:{  
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
         alignItems:"center",
         justifyContent:"center",
         width:160,
-        height:60,
+        height:90,
         backgroundColor:"#ffffff",
         borderRadius:50,
         margin:10,
@@ -68,7 +68,6 @@ const styles = StyleSheet.create({
     textModalButtons:{
         textAlign:"center",
         fontSize:16,
-        fontWeight:"bold",
         textTransform:"uppercase",
         color:"#000000",
     },

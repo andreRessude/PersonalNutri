@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef} from 'react'
 import { Text, View, SafeAreaView, TouchableOpacity, Modal, Image, Share } from 'react-native'
 import styles from './style'
 import { Camera } from 'expo-camera'
-import { CameraType } from 'expo-camera/build/Camera.types'
 import { FontAwesome } from '@expo/vector-icons'
 
 
@@ -13,6 +12,7 @@ export default function TelaCamera({ navigation }) {
     const [hasPermission, setHasPermission] = useState(null)    //permissao pra utilizar a camera
     const [capturedPhoto, setCapturedPhoto] = useState(null)    //imagem capturada
     const [open, setOpen] = useState(false)     //tela de mostrar a foto capturada
+    
 
     //
     useEffect ( () =>{
@@ -31,11 +31,11 @@ export default function TelaCamera({ navigation }) {
     }
 
     //funcao assincrona tirar foto
-    async function takePicture(){   
+    const takePicture = async() => {  
         if (camRef){
-        const data = await camRef.current.takePictureAsync();
-        setCapturedPhoto(data.uri)  //salvar a foto numa variavel
-        setOpen(true)      //abrir tela de mostrar a foto
+            const data = await camRef.current.takePictureAsync();
+            setCapturedPhoto(data.uri)      //salvar a foto numa variavel
+            setOpen(true)      //abrir tela de mostrar a foto
         }
     }
 
@@ -43,6 +43,7 @@ export default function TelaCamera({ navigation }) {
     return (
         <SafeAreaView style={styles.container}>
             <Camera style={styles.camera} type={type} ref={camRef}/>
+
             <TouchableOpacity style={styles.buttonFlip}
                 onPress={() =>{
                     setType(
@@ -51,24 +52,25 @@ export default function TelaCamera({ navigation }) {
                         : Camera.Constants.Type.back
                     )
                 }}>
-                <FontAwesome name="exchange" style={styles.buttonIcons}/>
+                <FontAwesome name="exchange" style={styles.buttonFlipIcon}/>
             </TouchableOpacity>
+
             <TouchableOpacity style={styles.buttonCamera} onPress={takePicture}>
-                <FontAwesome name='camera' style={styles.buttonIcons}/>
             </TouchableOpacity>
+
             {capturedPhoto &&(  //quando imagem for capturada
                 <Modal animationType="slide" transparent={false} visible={open}>
                     <View style={styles.contentModal}>
                         <Image style={styles.imgPhoto} source={{uri : capturedPhoto}}/>
                         <View style={styles.containerModal}>
                             <TouchableOpacity style={styles.modalButtons} onPress={() => {setOpen(false)}}>
-                                <Text style={styles.textModalButtons}>Tirar foto novamente</Text>
+                                <Text style={styles.textModalButtons}>Tentar novamente</Text>
                             </TouchableOpacity>
-                            <TouchableOpacity style={styles.modalButtons} onPress={() => {navigation.navigate('TelaPrincipal')}}>
-                                <Text style={styles.textModalButtons}>Confirmar foto</Text>
+                            <TouchableOpacity style={styles.modalButtons} onPress={() => (alert("Jóia!"), setOpen(false))}>
+                                <Text style={styles.textModalButtons}>Confirmar</Text>
                             </TouchableOpacity>
-                        </View>
-                    </View>
+                        </View>     
+                    </View>     
                 </Modal>  
             )}
         </SafeAreaView>

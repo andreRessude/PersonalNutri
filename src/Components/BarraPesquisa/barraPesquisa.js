@@ -57,27 +57,27 @@ export default function BarraPesquisa() {
 
     return (
         <View>
-        <SearchBar
-            platform="android"
-            containerStyle={{
-            width: "90%",
-            backgroundColor: "transparent",
-            borderColor: "#000000",
-            borderWidth: 1,
-            margin: 16,
-            borderRadius: 25
-            }}
-            inputStyle={{ paddingHorizontal: 15 }}
-            placeholder="Digite um alimento..."
-            onChangeText={(text) => setSearch(text)}
-            value={search}
-        />
-        <FlatList
-        data={filteredData}
-        keyExtractor={(item) => item.id.toString()}
-        renderItem={CardsAlimentos}
-        showsVerticalScrollIndicator={false}
-        />
+            <SearchBar
+                platform="android"
+                containerStyle={{
+                width: "90%",
+                backgroundColor: "transparent",
+                borderColor: "#000000",
+                borderWidth: 1,
+                margin: 10,
+                borderRadius: 5
+                }}
+                inputStyle={{ paddingHorizontal: 0 }}
+                placeholder="Digite um alimento..."
+                onChangeText={(text) => setSearch(text)}
+                value={search}
+            />
+            <FlatList
+            data={filteredData}
+            keyExtractor={(item) => item.id.toString()}
+            renderItem={CardsAlimentos}
+            showsVerticalScrollIndicator={false}
+            />
         </View>
     );
 }

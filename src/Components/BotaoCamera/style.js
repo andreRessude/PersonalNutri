@@ -8,13 +8,13 @@ const styles = StyleSheet.create({
         alignItems: "center",
         backgroundColor: "#CD021B",
         margin:20,
-        height:90,
-        width:150,
-        borderRadius:35,
-        borderWidth:2
+        height:100,
+        width:100,
+        borderRadius:50,
+        borderWidth:1
     },
     botaoCameraIcon:{
-        fontSize:46,
+        fontSize:45,
         color:"#ffffff",
     },
 });

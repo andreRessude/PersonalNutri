@@ -6,10 +6,6 @@ const styles = StyleSheet.create({
         height:"100%",
         alignItems:"center",
     },
-    scrollView:{
-        width:"100%",
-        heigth:"100%"
-    }
 });
 
 export default styles
