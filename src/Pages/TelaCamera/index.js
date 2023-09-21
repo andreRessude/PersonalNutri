@@ -64,10 +64,10 @@ export default function TelaCamera({ navigation }) {
                         <Image style={styles.imgPhoto} source={{uri : capturedPhoto}}/>
                         <View style={styles.containerModal}>
                             <TouchableOpacity style={styles.modalButtons} onPress={() => {setOpen(false)}}>
-                                <Text style={styles.textModalButtons}>Tentar novamente</Text>
+                                <Text style={styles.textModalButtons}>Tirar novamente</Text>
                             </TouchableOpacity>
                             <TouchableOpacity style={styles.modalButtons} onPress={() => (alert("Jóia!"), setOpen(false))}>
-                                <Text style={styles.textModalButtons}>Confirmar</Text>
+                                <Text style={styles.textModalButtons}>Confirmar foto</Text>
                             </TouchableOpacity>
                         </View>     
                     </View>     

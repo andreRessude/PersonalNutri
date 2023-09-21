@@ -12,7 +12,6 @@ export default function BarraPesquisa() {
     const navigation = useNavigation()
 
     const openScreenAlimentoSelecionado = (pratos) => {    //ir para telaAlimentoSelecionado e enviar dados da API
-        console.log(pratos.nome)
         navigation.navigate(('TelaAlimentoSelecionado'),{pratos})
     };
 

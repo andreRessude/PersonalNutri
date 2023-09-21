@@ -60,9 +60,9 @@ const styles = StyleSheet.create({
         alignItems:"center",
         justifyContent:"center",
         width:160,
-        height:90,
+        height:60,
         backgroundColor:"#ffffff",
-        borderRadius:50,
+        borderRadius:15,
         margin:10,
     },
     textModalButtons:{
