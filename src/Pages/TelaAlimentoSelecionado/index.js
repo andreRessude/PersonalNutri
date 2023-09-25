@@ -58,7 +58,7 @@ export default function TelaAlimentoSelecionado(){
                                 <Text style={styles.textTabela}> 2g </Text>
                             </View>
                         </View>
-                        ) || pratos.nome === 'Feiojoada' &&(
+                        ) || pratos.nome === 'Feijoada' &&(
                             <View style={styles.tabela}>
                                 <View style={styles.linhaTabela}>
                                     <Text style={styles.textTabela}> Feijão preto</Text>
@@ -145,7 +145,7 @@ export default function TelaAlimentoSelecionado(){
                                 <Text style={styles.textTabela}> {pratos.fibras}g </Text>
                            </View>
                             <View style={styles.linhaTabela}>
-                                <Text style={styles.textTabela}> Carga glicêmica: </Text>
+                                <Text style={styles.textTabela}> Carga Glicêmica: </Text>
                                 <Text style={styles.textTabela}> {pratos.indiceGlicemico} </Text>
                             </View>
                         </View>
