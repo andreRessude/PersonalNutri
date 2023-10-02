@@ -68,7 +68,7 @@ export default function TelaCamera({ navigation }) {
                             </TouchableOpacity>
                             <TouchableOpacity style={styles.modalButtons} onPress={() => (alert("Jóia!"), setOpen(false))}>
                                 <Text style={styles.textModalButtons}>Confirmar foto</Text>
-                            </TouchableOpacity>
+                            </TouchableOpacity>     
                         </View>     
                     </View>     
                 </Modal>  
