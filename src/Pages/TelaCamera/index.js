@@ -65,8 +65,7 @@ export default function TelaCamera({ navigation }) {
                         type === Camera.Constants.Type.back 
                         ? Camera.Constants.Type.front
                         : Camera.Constants.Type.back
-                    ), 
-                    console.log("oi")
+                    )
                 }}>
                 <FontAwesome name="exchange" style={styles.buttonFlipIcon}/>
             </TouchableOpacity>
