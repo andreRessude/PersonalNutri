@@ -173,7 +173,7 @@ export default function TelaAlimentoSelecionado(){
                         ) || pratos.id === 2 &&(
                             <View style={styles.contentModal}>
                                 <View style={styles.containerTextModal}>
-                                    <Text style={styles.textModal}> Dica do Feijoada</Text>
+                                    <Text style={styles.textModal}> Recomendação da FEIJOADA</Text>
                                 </View>
                                 <TouchableOpacity style={styles.closeButtonModal} onPress={() => setOpen(false)}>
                                     <Text style={styles.textCloseButtonModal}>Fechar</Text>
@@ -182,7 +182,7 @@ export default function TelaAlimentoSelecionado(){
                         ) || pratos.id === 3 &&(
                             <View style={styles.contentModal}>
                             <View style={styles.containerTextModal}>
-                                <Text style={styles.textModal}> Dica do Macarrão</Text>
+                                <Text style={styles.textModal}> Recomendação do MACARRÃO</Text>
                             </View>
                             <TouchableOpacity style={styles.closeButtonModal} onPress={() => setOpen(false)}>
                                 <Text style={styles.textCloseButtonModal}>Fechar</Text>

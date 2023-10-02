@@ -15,7 +15,7 @@ export default function BarraPesquisa() {
         navigation.navigate(('TelaAlimentoSelecionado'),{pratos})
     };
 
-    //dados da api
+    //consultar api pratos
     useEffect(() => {
         async function carregarPratos() {
         try {
@@ -31,7 +31,6 @@ export default function BarraPesquisa() {
 
     // Filtrar os dados com base na pesquisa do usuário
     useEffect(() => {
-        
         const filtered = data.filter((item) =>
         item.nome.toLowerCase().includes(search.toLowerCase())
         );
@@ -45,7 +44,7 @@ export default function BarraPesquisa() {
                 <TouchableOpacity
                 style={styles.cardContainer}
                 onPress={() => openScreenAlimentoSelecionado(item)}>
-                    <Image source={{ uri: item.imagem }} style={styles.cardImage} />
+                    <Image source={{ uri: item.imagem }} style={styles.cardImage}/>
                     <View style={styles.cardContent}>
                         <Text style={styles.cardText}>{item.nome}</Text>
                     </View>
